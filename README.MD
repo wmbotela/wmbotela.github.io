@@ -6,7 +6,7 @@
 
 _Portfolio that chronicles my coding journey_
 
-_Check out the site [Here] (https://wmbotela.github.io/)_
+_Check out the site  (https://wmbotela.github.io/)_
 
 
 ## Known Bugs
