@@ -60,15 +60,15 @@ h1 {
   margin-bottom: 80px;
 }
 
-#arbiter-title {
+#mkenyadaima {
     margin-top: 54px;
 }
 
-#qa-title {
+#messageboard {
     margin-top: 97px;
 }
 
-#adj {
+#ember {
     margin-bottom: 18px;
 }
 
@@ -85,11 +85,3 @@ h1 {
 .about-text {
   text-align: center;
 }
-
-/*@media only screen and (max-width: 750px) {
-
-  h1 {
-    font-size:160%;
-  }
-
-}*/
