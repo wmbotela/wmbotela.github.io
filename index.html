@@ -1,125 +1,196 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/jquery-3.1.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8" type="text/css">
-    <title>WMbotela-Portfolio</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <nav id="main-nav">
-          <p><a href="https://github.com/wmbotela" target="_blank">GITHUB</a></p>
-          <p><a href="https://www.linkedin.com/in/william-mbotela-a901ab144/" target="_blank">LINKEDIN</a></p>
-          <p><a href="https://docs.google.com/document/d/1TahIU6xvtY5VWt0QYExhvkhZaz0myJREHU0ZzztaPxs/edit?usp=sharing" target="_blank">RESUME</a></p>
-      </nav>
-      <div class="row" id="myname">
-      <div class="col-md-12 parallax-name"><h1>WILLIAM MBOTELA</h1></div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row gallery">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img class="gallery-image" src="img/lookup.jpg" alt="Git user Lookup">
-            <div class="caption">
-              <h3 class="gallery-title">Git UserLookup</h3>
-              <hr>
-              <p>Look up Git users with their username to view profile</p>
-              <p>JavaScript</p>
-              <p>jQuery</p>
-              <p><a href="https://wmbotela.github.io/Git_User-Lookup/" target="_blank" class="btn btn-primary" role="button">VIEW</a> <a href="https://github.com/wmbotela/Git_User-Lookup" target="_blank" class="btn btn-default" role="button">CODE</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img class="gallery-image" src="img/mkenyad.jpg" alt="mkenya daima">
-            <div class="caption">
-              <h3 id="mkenyadaima">MkenyaDaima</h3>
-              <hr>
-              <p>An onine store, Tailored to Kenyan Made and Branded items</p>
-              <p>JavaScript</p>
-              <p>Ember.js</p>
-              <p>
-                  <a href="https://mkenyadaima.herokuapp.com" target="_blank" class="btn btn-primary" role="button">VIEW</a>
-                  <a href="https://github.com/wmbotela/Mkenya-Daima" class="btn btn-default" role="button">CODE</a>
-             </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img class="gallery-image" src="img/msg.jpg" alt="message board">
-            <div class="caption">
-              <h3 id="messageboard">Q/A</h3>
-              <hr>
-              <p>Question and answer site similar to Stack Overflow</p>
-              <p>JavaScript</p>
-              <p id="ember">Ember.js</p>
-              <p>
-                  <a href="https://stark-temple-84540.herokuapp.com/" target="_blank" class="btn btn-primary" role="button">VIEW</a>
-                  <a href="https://github.com/wmbotela/Message-Board" class="btn btn-default" role="button">CODE</a>
-              </p>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<!-- Header -->
+			<div id="header">
+				<div class="top">
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/dev.jpg" alt="" /></span>
+							<h1 id="title">William Mbotela</h1>
+							<p>Software developer</p>
+						</div>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+								 links in one of two formats:
+								1. Hash link (scrolls to a different section within the page)
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+								2. Standard link (sends the user to another page/site)
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"> <!-- <span class="icon fa-home"> --> Intro</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><!--<span class="icon fa-user"> -->About Me</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><!-- <span class="icon fa-th"> -->Portfolio</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><!-- <span class="icon fa-envelope"> -->Contact</span></a></li>
+							</ul>
+						</nav>
 
-    <div class="container-fluid">
-      <div class="row" id="about-header">
-      <div class="col-md-12 parallax-about"><h1>ABOUT ME</h1></div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 about-text">
-          <h3>Technologies and Skills</h3>
-          <hr>
-          <div class="row">
-              <div class="col-sm-6">
-                  <p>HTML5</p>
-                  <p>CSS 3</p>
-                  <p>Bootstrap</p>
-                  <p>Git</p>
-                  <p>Pair Programming</p>
-              </div>
-              <div class="col-sm-6">
-                  <p>Spark</p>
-                  <p>JavaScript</p>
-                  <p>Angular</p>
-                  <p>Ember</p>
+				</div>
 
-              </div>
-          </div>
-        </div>
-        <div class="col-sm-4 about-text">
-          <h3>Bio</h3>
-          <hr>
-          <p>
-            My decision to become a programmer was fueled by my fascination with all things tech. I feel most fulfilled when creating and bringing ideas to life through tech, whilst solving difficulties faced in everyday life.
-          </p>
-          <p>
+				<div class="bottom">
+					<div class="contactz">
+						<p>Mobile : (254) 733 462680.</p>
+					</div>
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a target="blank" href="https://twitter.com/BiggWilly"  class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<!--<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+							<li><a href="https://github.com/wmbotela" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/william-mbotela-a901ab144/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<!-- <li><a href="https://docs.google.com/document/d/1lkdU9mxbdDGJyGWJAKbX4muBBqVyNU1-sFeWAoWfU60/edit?usp=sharing" class="icon fa-card"><span class="label">Email</span></a></li> -->
+						</ul>
 
-          </p>
-        </div>
-        <div class="col-sm-4 about-text">
-          <h3>Contact</h3>
-          <hr>
-          <p>wmbotela@gmail.com</p>
-          <p><a href="https://www.linkedin.com/in/william-mbotela-a901ab144/">LinkedIn</a></p>
-          <p><a href="https://github.com/wmbotela">Github</a></p>
-        </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+				</div>
+			</div>
 
-  </body>
+		<!-- Main -->
+			<div id="main">
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+							<header>
+								<h2 class="alt"><strong>Hi! I'm William Software Developer enthusiast. <br />
+								<p>Energetic, Innovative,Charismatic.</strong><br/>
+									</p>
+							</header>
+							<footer>
+								<a href="#about" class="button scrolly">Click for more</a>
+							</footer>
+						</div>
+					</section>
+
+					<!-- About Me -->
+						<section id="about" class="three">
+							<div class="container">
+
+								<header>
+									<h2>About Me</h2>
+								</header>
+
+								<center>
+									<a href="#" class="image featured"><img src="images/dev.jpg" id="imabout"alt="" /></a>
+								</center>
+
+								<p>My decision to become a programmer was fueled by my fascination with all things tech. <br>I feel most fulfilled when creating and bringing ideas to life through tech,<br> whilst solving difficulties faced in everyday life</p>
+
+							</div>
+						</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>Various projects that I have worked on and contributed to.</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="https://github.com/Dicksonmuli/LearnKSL" class="image fit"><img src="images/ksl.jpg" alt="" /></a>
+										<header>
+											<h3>Learn KSL</h3>
+										</header>
+									</article>
+									<!-- <article class="item">
+										<a href="#" class="image fit"><img src="images/.jpg" alt="" /></a>
+										<header>
+											<h3>My Restaurants</h3>
+										</header>
+									</article> -->
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="https://github.com/wmbotela/MYBible" class="image fit"><img src="images/bible.jpg" alt="" /></a>
+										<header>
+											<h3>My Bible Hotline</h3>
+										</header>
+									</article>
+									<!-- <article class="item">
+										<a href="#" class="image fit"><img src="images/.jpg" alt="" /></a>
+										<header>
+											<h3>Learn KSL</h3>
+										</header>
+									</article> -->
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item" id="i1">
+										<a href="https://github.com/wmbotela/Mkenya-Daima" class="image fit"><img src="images/mkenyad.jpg" id="im1" alt="" /></a>
+										<header>
+											<h3>Mkenya Daima</h3>
+										</header>
+									</article>
+									<article class="item" id="i2">
+										<a href="https://wmbotela.github.io/Git_User-Lookup/" class="image fit"><img src="images/lookup.jpg" id="im2" alt="" /></a>
+										<header>
+											<h3>Github UserLookup</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Feel free to drop me an email.</p>
+
+							<form method="post" action=mailto:wmbotela@gmail.com">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; wmbotela 2017. All rights reserved.</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
